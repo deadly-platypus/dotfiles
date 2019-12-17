@@ -2,3 +2,4 @@
 .config/sway
 .vimrc
 .Xdefaults
+.bashrc

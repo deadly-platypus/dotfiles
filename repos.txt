@@ -1,1 +1,3 @@
 kovidgoyal/kitty
+pwndbg/pwndbg
+efernau/rot8

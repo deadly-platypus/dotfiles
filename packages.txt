@@ -1,0 +1,17 @@
+vim
+git
+build-essentials
+clang-dev
+libdbus-1-dev
+libxcursor-dev
+libxrandr-dev
+libxi-dev
+libxinerama-dev
+libgl1-mesa-dev
+libxkbcommon-x11-dev
+libfontconfig-dev
+libpython-dev
+curl
+sway
+swayidle
+swaylock
