@@ -1,7 +1,10 @@
+python3
+wayland-protocols
+cargo
 vim
 git
-build-essentials
-clang-dev
+build-essential
+clang
 libdbus-1-dev
 libxcursor-dev
 libxrandr-dev

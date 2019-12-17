@@ -1,0 +1,2 @@
+cargo build --release
+sudo ln -s $PWD/target/release/rot8 /usr/bin/rot8 

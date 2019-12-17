@@ -3,3 +3,4 @@
 .vimrc
 .Xdefaults
 .bashrc
+.config/kitty
