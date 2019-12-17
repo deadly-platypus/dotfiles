@@ -18,5 +18,10 @@ make_symlink () {
 }
 
 # Create symlinks to config files
-make_symlink $DOTFILE_DIR/.ssh/config $HOME/.ssh/config
-make_symlink $DOTFILE_DIR/.config/sway $HOME/.config/sway
+for sym in $(cat $DOTFILE_DIR/symlinks.txt); do
+	make_symlink $DOTFILE_DIR/$sym $HOME/$sym
+done
+
+echo "Updating packages"
+sudo apt update
+sudo apt upgrade
