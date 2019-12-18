@@ -175,7 +175,7 @@
 
         "states": {
 
-            // "good": 95,
+            "good": 95,
 
             "warning": 30,
 
