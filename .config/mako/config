@@ -1,0 +1,16 @@
+font=Inconsolata 15
+background-color=#222270
+text-color=#EEEEEE
+width=500
+height=150
+margin=34,10,0,0
+padding=10
+border-size=0
+border-color=#dbdfbcCC
+markup=1
+default-timeout=5000
+ignore-timeout=1
+
+[hidden]
+
+format="(%h more)"
