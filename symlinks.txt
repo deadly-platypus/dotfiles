@@ -4,3 +4,5 @@
 .Xdefaults
 .bashrc
 .config/kitty
+.config/ranger
+.config/waybar

@@ -10,7 +10,7 @@ exit_fail() {
 
 # Usage: run_cmd "cmd" 
 run_cmd() {
-	eval "$*" || exit_fail "$*" 1
+	eval "$*" || exit_fail "Failed command: $*" 1
 }
 
 # Usage: make_symlink "original_path" "destination_path"
@@ -78,6 +78,10 @@ for repo in $(cat repos.txt); do
 		exit 1
 	fi
 	get_latest_release "$repo" "$DOTFILE_DIR/code"
+	if [[ -f $DOTFILES_DIR/generated/$repo ]]; then
+		echo "Removing $(cat $DOTFILES_DIR/generated/$repo)"
+		run_cmd sudo rm -rf $(cat $DOTFILES_DIR/generated/$repo)
+	fi
 	run_cmd cd $DOTFILE_DIR/code/$repo
 	echo -n "Building $repo..."
 	while IFS= read -r build_cmd; do
