@@ -1,0 +1,3 @@
+meson build
+ninja -C build
+ln -s $PWD/build/mako /usr/bin/mako

@@ -2,3 +2,5 @@ Alexays/Waybar
 kovidgoyal/kitty
 pwndbg/pwndbg
 efernau/rot8
+emersion/mako
+

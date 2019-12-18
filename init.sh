@@ -91,5 +91,9 @@ for repo in $(cat repos.txt); do
 	cd $DOTFILE_DIR
 done
 
+if [ ! -d $HOME/Pictures/screenshots ]; then
+	mkdir -p $HOME/Pictures/screenshots
+fi
+
 clear
 echo "System successfully set up!"
