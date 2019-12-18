@@ -1,3 +1,5 @@
+mpd
+pavucontrol
 meson
 libgtkmm-3.0-dev 
 libjsoncpp-dev 
