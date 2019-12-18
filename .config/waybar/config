@@ -17,35 +17,31 @@
 
     // Modules configuration
 
-    // "sway/workspaces": {
+    "sway/workspaces": {
 
-    //     "disable-scroll": true,
+         "disable-scroll": true,
 
-    //     "all-outputs": true,
+         "all-outputs": true,
 
-    //     "format": "{name}: {icon}",
+         "format": "{name}: {icon}",
 
-    //     "format-icons": {
+         "format-icons": {
 
-    //         "1": "",
+             "1": "",
 
-    //         "2": "",
+             "2": "",
 
-    //         "3": "",
+             "3": "",
 
-    //         "4": "",
+             "urgent": "",
 
-    //         "5": "",
+             "focused": "",
 
-    //         "urgent": "",
+             "default": ""
 
-    //         "focused": "",
+         }
 
-    //         "default": ""
-
-    //     }
-
-    // },
+     },
 
     "sway/mode": {
 

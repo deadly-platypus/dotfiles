@@ -122,7 +122,7 @@ export XDG_CACHE_HOME=$HOME/.cache
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 
-wmname LG3D
 export _JAVA_AWT_WM_NONREPARENTING=1
 export KITTY_ENABLE_WAYLAND=1
 export MOZ_ENABLE_WAYLAND=1
+wmname LG3D
