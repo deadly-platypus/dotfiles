@@ -136,9 +136,9 @@ window#waybar {
 
     animation-name: blink;
 
-    animation-duration: 0.5s;
+    animation-duration: 1.0s;
 
-    animation-timing-function: linear;
+    animation-timing-function: ease;
 
     animation-iteration-count: infinite;
 

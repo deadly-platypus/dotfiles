@@ -207,10 +207,6 @@ default_border none
 gaps inner 5
 gaps outer 2
 
-exec python3 /home/derrick/.config/sway/inactive-windows-transparency.py
-exec sh /home/derrick/.config/sway/snap-apps.sh
-exec rot8
-
 #hide mouse on inactivity
 seat * hide_cursor 3000
 

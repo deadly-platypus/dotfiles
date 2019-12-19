@@ -19,7 +19,7 @@
 
     "sway/workspaces": {
 
-         "disable-scroll": true,
+         "disable-scroll": false,
 
          "all-outputs": true,
 
@@ -172,6 +172,7 @@
     },
 
     "battery": {
+	"bat": "BAT0",
 
         "states": {
 
@@ -212,7 +213,7 @@
         "format-disconnected": "Disconnected ⚠",
 
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
-	"on-click": "nmtui"
+	"on-click": "swaymsg exec '$term nmtui'"
 
     },
 
