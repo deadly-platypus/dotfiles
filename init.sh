@@ -58,6 +58,10 @@ for sym in $(cat $DOTFILE_DIR/symlinks.txt); do
 	make_symlink $DOTFILE_DIR/$sym $HOME/$sym
 done
 
+run_cmd sudo ln -s $DOTFILE_DIR/sudo_config /etc/sudoers.d/sudo_config
+run_cmd sudo chown root:root /etc/sudoers.d/sudo_config
+run_cmd sudo chown root:roor $DOTFILE_DIR/sudo_config
+
 run_cmd source $HOME/.bashrc
 
 echo "Updating packages"
