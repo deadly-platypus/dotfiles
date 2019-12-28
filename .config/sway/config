@@ -213,12 +213,18 @@ seat * hide_cursor 3000
 bindsym XF86MonBrightnessUp exec sudo brightnessctl s +5%
 bindsym XF86MonBrightnessDown exec sudo brightnessctl s 5%-
 
-bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
-bindsym XF86AudioLowerVolume exec amixer set Master 5%-
+#bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+#bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioRaiseVolume exec amixer set Master 1%+
+bindsym XF86AudioLowerVolume exec amixer set Master 1%-
+# amixer set Master toogle is buggy
+#bindsym XF86AudioMute exec amixer set Master toggle
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 bindsym $mod+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') $(xdg-user-dir PICTURES)/screenshots/$(date +'screenshot_%Y%m%d_%H%M%S.png')
-
-bindsym $mod+Shift+f exec ranger
 
 include $HOME/.config/sway/wacom.config
 include $HOME/.config/sway/swaybar.config

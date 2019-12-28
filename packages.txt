@@ -1,3 +1,4 @@
+playerctl
 jq
 libgdk-pixbuf2.0-0
 libwayland-dev
