@@ -25,7 +25,6 @@ w3m-img
 ranger
 python3
 wayland-protocols
-cargo
 vim
 git
 build-essential

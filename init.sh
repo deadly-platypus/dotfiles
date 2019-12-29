@@ -63,6 +63,9 @@ run_cmd sudo chown root:root /etc/sudoers.d/sudo_config
 
 run_cmd source $HOME/.bashrc
 
+# Not sure if piping works with run_cmd, so purposefully just run the command
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 echo "Updating packages"
 run_cmd sudo apt update
 run_cmd sudo apt upgrade
