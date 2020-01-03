@@ -8,7 +8,7 @@
 [alias]
   s = status
   cm = commit -am
-  pu = push
+  pom = push origin master
   d = diff
   co = checkout
   br = branch
