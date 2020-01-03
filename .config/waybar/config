@@ -129,8 +129,8 @@
     "clock": {
 
         //"tooltip-format": "{:%Y-%m-%d | %H:%M}",
-        "format": "{:%Y-%m-%d | %H:%M}"
-
+        "format": "{:%Y-%m-%d | %H:%M}",
+	"on-click": "gnome-calendar"
         //"format-alt": "{:%Y-%m-%d}"
 
     },
@@ -216,9 +216,8 @@
 
         "format-disconnected": "Disconnected ⚠",
 
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
-	"on-click": "swaymsg exec '$term nmtui'"
-
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
+	"on-click": "kitty nmtui"
     },
 
     "pulseaudio": {
