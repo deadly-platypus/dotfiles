@@ -7,3 +7,4 @@
 .config/ranger
 .config/waybar
 .config/mako
+.gitconfig
