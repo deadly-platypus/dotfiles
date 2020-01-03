@@ -28,7 +28,7 @@ window#waybar {
 
     font-weight: bold;
 
-    font-family: "Ubuntu";
+/*    font-family: "Ubuntu";*/
 
 }
 
@@ -78,11 +78,11 @@ window#waybar {
 
 
 
-#clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #mode {
+#clock, #battery, #cpu, #memory, #network, #pulseaudio, #tray, #mode, #backlight, #idle_inhibitor, #temperature {
 
-    padding: 0 3px;
+    padding: 0 5px;
 
-    margin: 0 2px;
+    /*margin: 0 2px;*/
 
 }
 

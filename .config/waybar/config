@@ -1,15 +1,17 @@
 {
     "layer": "bottom", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 25, // Waybar height (to be removed for auto height)
+    "height": 15, // Waybar height (to be removed for auto height)
     
      // "width": 1280, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
+    // "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
+    "modules-left": ["sway/workspaces", "sway/mode"],
 
     "modules-center": ["sway/window"],
 
-    "modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
+    //"modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
+    "modules-right": ["idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
 
     "sway/window": {
 	"disable-scroll": "false"
@@ -32,6 +34,7 @@
              "2": "",
 
              "3": "",
+	     "4": "",
 
              "urgent": "",
 
@@ -125,9 +128,10 @@
 
     "clock": {
 
-        "tooltip-format": "{:%Y-%m-%d | %H:%M}",
+        //"tooltip-format": "{:%Y-%m-%d | %H:%M}",
+        "format": "{:%Y-%m-%d | %H:%M}"
 
-        "format-alt": "{:%Y-%m-%d}"
+        //"format-alt": "{:%Y-%m-%d}"
 
     },
 
@@ -252,7 +256,6 @@
         },
 
         "on-click": "pavucontrol"
-
     },
 
     "custom/media": {
@@ -270,15 +273,6 @@
             "default": "🎜"
 
         },
-
-        "escape": true,
-
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-
+        "escape": true
     }
-
 }
-
-
