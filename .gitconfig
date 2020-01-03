@@ -7,6 +7,8 @@
 
 [alias]
   s = status
+  cm = commit -am
+  pu = push
   d = diff
   co = checkout
   br = branch
