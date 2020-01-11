@@ -3,4 +3,5 @@ kovidgoyal/kitty
 pwndbg/pwndbg
 efernau/rot8
 emersion/mako
-
+ArtsyMacaw/wlogout
+wmww/gtk-layer-shell

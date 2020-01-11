@@ -1,3 +1,7 @@
+libwayland-dev
+libgtk-3-dev
+gobject-introspection
+libgirepository1.0-dev
 bemenu
 playerctl
 jq
