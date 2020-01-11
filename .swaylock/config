@@ -1,12 +1,12 @@
 ignore-empty-password
 color=2e3440
-font="Ubuntu Nerd Font"
+font=Ubuntu Nerd Font
 bs-hl-color=c98554
 inside-color=97c854
 inside-color-clear=c9c054
-inside-wrong-color=c9545d
+inside-wrong-color=8554c9
 key-hl-color=5dc954
 ring-color=54c986
 ring-wrong-color=c05961
 inside-ver-color=545dc9
-
+line-color=54c9c0

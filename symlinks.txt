@@ -8,5 +8,5 @@
 .config/waybar
 .config/mako
 .gitconfig
-.config/swaylock
+.swaylock
 .config/wlogout

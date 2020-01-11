@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "swaylock",
+    "action" : "swaylock -d -C $HOME/.swaylock/config",
     "text" : "Lock",
     "keybind" : "l"
 }
