@@ -1,6 +1,8 @@
 #!/bin/bash
 
 DOTFILE_DIR=$(dirname $(realpath $0))
+PACKAGE_INSTALL_CMD="pacman -Syu"
+PACKAGE_UPDATE_CMD="pacman -Syu"
 
 # Usage: exit_fail "Something happened" 1
 exit_fail() {
@@ -67,12 +69,11 @@ run_cmd source $HOME/.bashrc
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 echo "Updating packages"
-run_cmd sudo apt update
-run_cmd sudo apt upgrade
+run_cmd sudo $PACKAGE_UPDATE_CMD
 
 # packages.txt should have one package per line
 packages=$(cat $DOTFILE_DIR/packages.txt | tr -s "\n" " ")
-run_cmd sudo apt install $packages
+run_cmd sudo $PACKAGE_INSTALL_CMD $packages
 
 if [ ! -f $HOME/.ssh/id_rsa ]; then
 	run_cmd ssh-keygen
@@ -96,10 +97,6 @@ for repo in $(cat repos.txt); do
 	echo "done."
 	cd $DOTFILE_DIR
 done
-
-if [ ! -d $HOME/Pictures/screenshots ]; then
-	mkdir -p $HOME/Pictures/screenshots
-fi
 
 clear
 echo "System successfully set up!"
