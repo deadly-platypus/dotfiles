@@ -212,8 +212,8 @@ include /etc/sway/config.d/*
 #hide mouse on inactivity
 seat * hide_cursor 3000
 
-bindsym --locked XF86MonBrightnessUp exec sudo brightnessctl s +5%
-bindsym --locked XF86MonBrightnessDown exec sudo brightnessctl s 5%-
+bindsym --locked XF86MonBrightnessUp exec brightnessctl s +5%
+bindsym --locked XF86MonBrightnessDown exec brightnessctl s 5%-
 
 #bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 #bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%

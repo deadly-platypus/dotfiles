@@ -36,6 +36,9 @@ window:
   #     - none: Neither borders nor title bar
   decorations: full
 
+  dynamic_title: true
+
+
 scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
@@ -54,18 +57,6 @@ scrolling:
   # Specifying `0` will disable faux scrolling.
   #  faux_multiplier: 3
 
-  # Scroll to the bottom when new text is written to the terminal.
-  auto_scroll: false
-
-# Spaces per Tab (changes require restart)
-#
-# This setting defines the width of a tab in cells.
-#
-# Some applications, like Emacs, rely on knowing about the width of a tab.
-# To prevent unexpected behavior in these applications, it's also required to
-# change the `it` value in terminfo when altering this setting.
-tabspaces: 8
-
 # Font configuration (changes require restart)
 #
 # Important font attributes like antialiasing, subpixel aa, and hinting can be
@@ -83,39 +74,39 @@ tabspaces: 8
 # Please see these resources for more information on how to use fontconfig:
 #   - https://wiki.archlinux.org/index.php/font_configuration#Fontconfig_configuration
 #   - file:///usr/share/doc/fontconfig/fontconfig-user.html
-font:
+#font:
   # Normal (roman) font face
-  normal:
-    family: 'Iosevka'
+#  normal:
+    #family: 'Iosevka'
     # The `style` can be specified to pick a specific face.
-    style: Medium
+    #style: Medium
 
   # Bold font face
-  bold:
+  #bold:
     #family: 'SFMono Nerd Font'
     # The `style` can be specified to pick a specific face.
-    style: Bold
+  #  style: Bold
   # Italic font face
-  italic:
+  #italic:
     #family: 'SFMono Nerd Font'
     # The `style` can be specified to pick a specific face.
-    style: Italic
+  #  style: Italic
 
   # Point size
-  size: 8
+  #size: 8
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
-  offset:
-    x: 0
-    y: 0
+#  offset:
+#    x: 0
+#    y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
   # increasing `y` moves the glyph upwards.
-  glyph_offset:
-    x: 0
-    y: 0
+#  glyph_offset:
+#    x: 0
+#    y: 0
 
   # Scale the font size based on the monitor's DPI. This will lead to bigger text on HiDPI
   # screens and make reading text a little easier.
@@ -124,7 +115,7 @@ font:
   #scale_with_dpi: true
 
 # Display the time it takes to redraw each frame.
-debug.render_timer: true
+debug.render_timer: false
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
@@ -179,7 +170,7 @@ colors:
 #   - Linear
 #
 # Specifying a `duration` of `0` will disable the visual bell.
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 0
 
@@ -240,8 +231,6 @@ selection:
   # clipboard.
   save_to_clipboard: false
 
-dynamic_title: true
-
 cursor:
   # Cursor style
   #
@@ -262,8 +251,8 @@ live_config_reload: true
 #
 # You can set `shell.program` to the path of your favorite shell, e.g. `/bin/fish`.
 # Entries in `shell.args` are passed unmodified as arguments to the shell.
-shell:
-  program: /usr/bin/tmux
+#shell:
+#  program: /usr/bin/tmux
 #  args:
 #    - --login
 
@@ -354,7 +343,7 @@ key_bindings:
   - { key: Insert,   mods: Shift,   action: PasteSelection               }
   - { key: Key0,     mods: Control, action: ResetFontSize                }
   - { key: Equals,   mods: Control, action: IncreaseFontSize             }
-  - { key: Subtract, mods: Control, action: DecreaseFontSize             }
+#  - { key: Subtract, mods: Control, action: DecreaseFontSize             }
   - { key: Home,                    chars: "\x1bOH",   mode: AppCursor   }
   - { key: Home,                    chars: "\x1b[H",   mode: ~AppCursor  }
   - { key: End,                     chars: "\x1bOF",   mode: AppCursor   }
