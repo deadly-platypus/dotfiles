@@ -1,3 +1,5 @@
+qemu
+qemu-arch-extra
 zoom
 bemenu
 playerctl
