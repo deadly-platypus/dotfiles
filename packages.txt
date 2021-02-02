@@ -1,3 +1,4 @@
+zoom
 bemenu
 playerctl
 jq
