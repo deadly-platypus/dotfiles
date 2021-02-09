@@ -1,3 +1,15 @@
+texlive-latexextra
+rubber
+xournalpp
+texlive-core
+texlive-pictures
+texlive-science
+evince
+htop
+signal-desktop
+obs-studio
+unzip
+lld
 qemu
 qemu-arch-extra
 zoom
